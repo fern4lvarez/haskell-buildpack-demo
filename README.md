@@ -1,26 +1,26 @@
 # Haskell Buildpack Demo
 
-This demo is live on Heroku:
+This demo is live on cloudControl:
 
-http://haskell-buildpack-demo.herokuapp.com/
+http://haskelldemo.cloudcontrolled.com
 
 It uses the Haskell Buildpack:
 
-https://github.com/pufuwozu/heroku-buildpack-haskell
+https://github.com/fern4lvarez/buildpack-haskell
 
-## Pushing to Heroku
+## Pushing & deploying to cloudControl
 
 Clone this repository:
 
-    git clone https://github.com/pufuwozu/haskell-buildpack-demo.git
+    git clone https://github.com/fern4lvarez/haskell-buildpack-demo.git
 
-Create a new Heroku application:
+Create a new cloudControl application:
 
-    heroku create --stack=cedar --buildpack https://github.com/pufuwozu/heroku-buildpack-haskell.git
+    cctrlapp APP_NAME create custom --buildpack https://github.com/fern4lvarez/buildpack-haskell.git
 
-Push!
+Ship it!
 
-    git push heroku master
+    cctrlapp APP_NAME/default push --ship
 
 *Note*: the push will take some time to install dependencies and might
 not show any output for quite a while. It will also show a lot of

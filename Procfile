@@ -1,1 +1,1 @@
-web: ./dist/build/heroku-haskell/heroku-haskell
+web: ./dist/build/cctrl-haskell/cctrl-haskell
